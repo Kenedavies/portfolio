@@ -1,9 +1,10 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+// import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./layouts/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,12 +12,13 @@ function App() {
   const routers = createBrowserRouter([
     {
       path: "/",
-      element: <Navbar />,
+      element: <Home />,
     },
   ]);
 
   return (
     <>
+      <Navbar />
       <RouterProvider router={routers} />
       <div>
         <a href="https://vitejs.dev" target="_blank">
