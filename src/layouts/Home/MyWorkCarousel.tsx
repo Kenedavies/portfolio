@@ -112,7 +112,7 @@ export default function MyWorkCarousel() {
           </div>
         </div>
       </section>
-      <div>
+      {/* <div>
         {projectLists.map((project, i) => (
           <section
             key={i}
@@ -167,7 +167,7 @@ export default function MyWorkCarousel() {
             </div>
           </section>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
