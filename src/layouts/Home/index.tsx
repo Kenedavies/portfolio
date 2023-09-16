@@ -1,11 +1,13 @@
 import React from "react";
 import { CalendarIcon } from "../../assets/Svg";
 import MyWorkCarousel from "./MyWorkCarousel";
+import Experience from "./Experience";
+import DesignProcess from "./DesignProcess";
 
 export default function Home() {
   return (
-    <main className="px-3 md:px-6">
-      <section>
+    <main>
+      <section className="px-3 md:px-6">
         <div className="container mx-auto py-12 md:py-20">
           <div className="max-w-[750px]">
             <div className="text-[40px] md:text-[50px] lg:text-[70px] leading-[60px] md:leading-[112px]">
@@ -28,10 +30,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="px-3 md:px-6">
         <div className="container mx-auto">
           <MyWorkCarousel />
         </div>
+      </section>
+
+      <section className="px-3 md:px-6">
+        <div className="container mx-auto">
+          <Experience />
+        </div>
+      </section>
+
+      <section className="bg-white px-3 md:px-6  py-14 md:py-20">
+        <div className="container mx-auto">
+          <DesignProcess />
+        </div>
+      </section>
+
+      <section className="bg-white px-3 md:px-6">
+        <div className="container mx-auto"></div>
       </section>
     </main>
   );
