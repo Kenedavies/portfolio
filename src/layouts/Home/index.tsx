@@ -1,8 +1,8 @@
-import React from "react";
 import { CalendarIcon } from "../../assets/Svg";
 import MyWorkCarousel from "./MyWorkCarousel";
 import Experience from "./Experience";
 import DesignProcess from "./DesignProcess";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -49,7 +49,9 @@ export default function Home() {
       </section>
 
       <section className="bg-white px-3 md:px-6">
-        <div className="container mx-auto"></div>
+        <div className="container mx-auto">
+          <Footer />
+        </div>
       </section>
     </main>
   );
