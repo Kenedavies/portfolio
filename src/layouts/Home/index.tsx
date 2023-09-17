@@ -2,7 +2,6 @@ import { CalendarIcon } from "../../assets/Svg";
 import MyWorkCarousel from "./MyWorkCarousel";
 import Experience from "./Experience";
 import DesignProcess from "./DesignProcess";
-import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -19,10 +18,10 @@ export default function Home() {
               products that your clients will love and let your business thrive.
             </p>
             <div className="flex flex-wrap gap-6 md:gap-8">
-              <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-app-green text-app-black text-sm md:text-xl rounded-[30px] py-3 sm:py-4 px-8">
+              <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-app-green text-app-black text-sm md:text-xl font-saira-medium rounded-[30px] py-3 sm:py-4 px-8">
                 <CalendarIcon /> <span>Send a message</span>
               </button>
-              <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-transparent text-white text-sm md:text-xl border border-white rounded-[30px] py-3 sm:py-4 px-8">
+              <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-transparent text-white text-sm md:text-xl font-saira-medium border border-white rounded-[30px] py-3 sm:py-4 px-8">
                 <CalendarIcon /> <span>Schedule a call</span>
               </button>
             </div>
@@ -45,12 +44,6 @@ export default function Home() {
       <section className="bg-white px-3 md:px-6  py-14 md:py-20">
         <div className="container mx-auto">
           <DesignProcess />
-        </div>
-      </section>
-
-      <section className="bg-white px-3 md:px-6">
-        <div className="container mx-auto">
-          <Footer />
         </div>
       </section>
     </main>

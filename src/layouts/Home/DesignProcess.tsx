@@ -40,7 +40,7 @@ export default function DesignProcess() {
       <p className="text-app-black font-saira-medium mb-5">
         I design user centered products
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-14">
         {designLists.map((design, index) => (
           <div
             key={index}
