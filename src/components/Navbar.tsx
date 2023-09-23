@@ -2,6 +2,10 @@ import React from "react";
 import DavidIcon from "./../assets/images/David.svg";
 
 export default function Navbar() {
+  function DrawerMobileNav(x: string) {
+    // document.getSelection("mobileDrawer").style.width = x;
+    console.log("--x", x);
+  }
   return (
     <nav className="bg-red text-red px-3 md:px-6 py-4">
       <div className="container mx-auto flex justify-between items-center">
@@ -25,6 +29,14 @@ export default function Navbar() {
           <a href="">Contact</a>
           <a href="">Read CV</a>
         </div>
+        <button
+          onClick={function () {
+            DrawerMobileNav("100%");
+          }}
+        >
+          Menu
+        </button>
+        <div id="mobileDrawer"></div>
       </div>
     </nav>
   );
