@@ -20,8 +20,8 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-6 md:gap-16">
-          <a href="#">Home</a>
-          <a href="">WORK</a>
+          <a href="/">Home</a>
+          <a href="my-works">WORK</a>
           <a href="">Contact</a>
           <a href="">Read CV</a>
         </div>

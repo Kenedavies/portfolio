@@ -9,7 +9,7 @@ export default function Footer() {
             <h2 className="text-2xl md:text-[30px] font-saira-bold">
               Thanks for your time
             </h2>
-            <div className="flex justify-between items-center my-4 md:my-6">
+            <div className="flex justify-between md:justify-start items-center md:gap-24 my-4 md:my-6">
               <p>Email</p>
               <p>Twitter</p>
               <p>Phone number</p>
@@ -25,7 +25,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-          <div className="lg:w-1/4">
+          <div className="">
             <div className="relative w-fit h-fit">
               <img
                 src="/src/assets/images/David.svg"
