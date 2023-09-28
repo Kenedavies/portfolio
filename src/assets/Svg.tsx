@@ -17,3 +17,22 @@ export const CalendarIcon = ({ color = "currentColor" }) => {
     </svg>
   );
 };
+
+export function MenuIcon({ color = "currentColor" }) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 16 16"
+      font-size="25px"
+      color="#111010"
+      style={{ color: color }}
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"></path>
+    </svg>
+  );
+}

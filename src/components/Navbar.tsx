@@ -1,5 +1,6 @@
 import React from "react";
 import DavidIcon from "./../assets/images/David.svg";
+import { MenuIcon } from "../assets/Svg";
 
 export default function Navbar() {
   function DrawerMobileNav(x: string) {
@@ -23,7 +24,7 @@ export default function Navbar() {
             <p className="text-xs md:text-sm">Available to work</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+        <div className="hidden md:flex flex-col md:flex-row gap-6 md:gap-16">
           <a href="/">Home</a>
           <a href="my-works">WORK</a>
           <a href="">Contact</a>
@@ -33,10 +34,11 @@ export default function Navbar() {
           onClick={function () {
             DrawerMobileNav("100%");
           }}
+          className="md:hidden block text-white bg-greeen-400"
         >
-          Menu
+          <MenuIcon />
         </button>
-        <div id="mobileDrawer"></div>
+        <div id="mobileDrawer" className="hidden"></div>
       </div>
     </nav>
   );
