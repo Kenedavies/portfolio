@@ -6,7 +6,7 @@ import DesignProcess from "./DesignProcess";
 export default function Home() {
   return (
     <main>
-      <section className="px-3 md:px-6">
+      <section className="bg-[url('/src/assets/images/Hero-lines.png')] bg-no-repeat bg-cover px-3 md:px-6 pt-28">
         <div className="container mx-auto py-12 md:py-20">
           <div className="max-w-[750px]">
             <div className="text-[40px] md:text-[50px] lg:text-[70px] leading-[60px] md:leading-[112px]">

@@ -15,7 +15,7 @@ export default function MyWorks() {
     {
       title: "Cloudsania",
       content:
-        "I have 20 years of experience and design high-quality digital products that",
+        "I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that",
       links: "",
     },
     {
@@ -27,7 +27,7 @@ export default function MyWorks() {
   ];
   return (
     <div>
-      <section className="px-3 md:px-6">
+      <section className="px-3 md:px-6 pt-28">
         <div className="container mx-auto py-12 md:py-20">
           <h1 className="text-5xl md:text-[70px] font-saira-bold mb-4 md:mb-6">
             My works
@@ -38,7 +38,7 @@ export default function MyWorks() {
           </p>
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {workLists.map((_card, index) => (
-              <article key={index} className="rounded-lg">
+              <article key={index} className="flex flex-col rounded-lg">
                 <div className="w-full bg-white flex justify-center rounded-t-lg py-3">
                   <img
                     src="/src/assets/images/iPhone-11-Pro.svg"
@@ -46,7 +46,7 @@ export default function MyWorks() {
                   />
                 </div>
                 <div
-                  className="rounded-lg rounded-b-lg p-4 md:p-5"
+                  className="h-full flex flex-col rounded-lg rounded-b-lg px-4 md:px-5 py-8"
                   style={{
                     background:
                       "linear-gradient(180deg, rgba(255, 255, 255, 0.10) -2.76%, rgba(255, 255, 255, 0.10) 103.97%)",
@@ -56,7 +56,7 @@ export default function MyWorks() {
                     {_card.title}
                   </h4>
                   <p className="text-sm my-4">{_card.content}</p>
-                  <button className="w-full bg-app-green text-app-black rounded-[30px] font-saira-medium py-3">
+                  <button className="w-full bg-app-green text-app-black rounded-[30px] font-saira-medium py-3 mt-auto">
                     View more
                   </button>
                 </div>

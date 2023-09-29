@@ -8,7 +8,7 @@ export default function Navbar() {
     console.log("--x", x);
   }
   return (
-    <nav className="bg-red text-red px-3 md:px-6 py-4">
+    <nav className="absolute top-0 left-0 right-0 bg-transparent px-3 md:px-6 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-1 md:gap-2">
           <div className="relative">
