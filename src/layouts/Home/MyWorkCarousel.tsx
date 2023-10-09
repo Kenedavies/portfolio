@@ -91,8 +91,11 @@ export default function MyWorkCarousel() {
             consult and set up cloud infrastructural service.
           </p>
           <div className="flex flex-wrap gap-[10px]">
-            {projectLists[0]["tools"].map((tool) => (
-              <span className="border border-app-black rounded-[10px] px-5 py-1">
+            {projectLists[0]["tools"].map((tool, i) => (
+              <span
+                key={i}
+                className="border border-app-black rounded-[10px] px-5 py-1"
+              >
                 {tool}
               </span>
             ))}

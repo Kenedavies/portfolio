@@ -1,6 +1,7 @@
 import React from "react";
 import DavidIcon from "./../assets/images/David.svg";
 import { MenuIcon } from "../assets/Svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   function DrawerMobileNav(x: string) {
@@ -25,10 +26,10 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden md:flex flex-col md:flex-row gap-6 md:gap-16">
-          <a href="/">Home</a>
-          <a href="my-works">WORK</a>
-          <a href="">Contact</a>
-          <a href="">Read CV</a>
+          <Link to="/">Home</Link>
+          <Link to="my-work">WORK</Link>
+          <Link to="">Contact</Link>
+          <Link to="">Read CV</Link>
         </div>
         <button
           onClick={function () {

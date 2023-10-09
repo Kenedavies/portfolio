@@ -23,9 +23,9 @@ export function MenuIcon({ color = "currentColor" }) {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 16 16"
-      font-size="25px"
+      fontSize="25px"
       color="#111010"
       style={{ color: color }}
       height="1em"

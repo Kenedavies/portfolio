@@ -1,4 +1,4 @@
-export default function MyWorks() {
+export default function MyWork() {
   const workLists = [
     {
       title: "Wordshop",
