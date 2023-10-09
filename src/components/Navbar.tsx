@@ -1,6 +1,6 @@
 import React from "react";
 import DavidIcon from "./../assets/images/David.svg";
-import { MenuIcon } from "../assets/Svg";
+import { MenuIcon } from "../assets/svg/Svg";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

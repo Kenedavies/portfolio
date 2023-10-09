@@ -1,30 +1,35 @@
+import { useNavigate } from "react-router-dom";
+import { myWorkData } from "../../util/myWorkData";
+
 export default function MyWork() {
-  const workLists = [
-    {
-      title: "Wordshop",
-      content:
-        "I have 20 years of experience and design high-quality digital products that",
-      links: "",
-    },
-    {
-      title: "Treepz",
-      content:
-        "I have 20 years of experience and design high-quality digital products that",
-      links: "",
-    },
-    {
-      title: "Cloudsania",
-      content:
-        "I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that",
-      links: "",
-    },
-    {
-      title: "Syncteams",
-      content:
-        "I have 20 years of experience and design high-quality digital products that",
-      links: "",
-    },
-  ];
+  const navigate = useNavigate();
+
+  // const workLists = [
+  //   {
+  //     title: "Wordshop",
+  //     content:
+  //       "I have 20 years of experience and design high-quality digital products that",
+  //     links: "",
+  //   },
+  //   {
+  //     title: "Treepz",
+  //     content:
+  //       "I have 20 years of experience and design high-quality digital products that",
+  //     links: "",
+  //   },
+  //   {
+  //     title: "Cloudsania",
+  //     content:
+  //       "I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that I have 20 years of experience and design high-quality digital products that",
+  //     links: "",
+  //   },
+  //   {
+  //     title: "Syncteams",
+  //     content:
+  //       "I have 20 years of experience and design high-quality digital products that",
+  //     links: "",
+  //   },
+  // ];
   return (
     <div>
       <section className="px-3 md:px-6 pt-28">
@@ -37,7 +42,7 @@ export default function MyWork() {
             products for B2B and B2C digital products.
           </p>
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {workLists.map((_card, index) => (
+            {myWorkData.map((_card, index) => (
               <article key={index} className="flex flex-col rounded-lg">
                 <div className="w-full bg-white flex justify-center rounded-t-lg py-3">
                   <img
@@ -53,10 +58,13 @@ export default function MyWork() {
                   }}
                 >
                   <h4 className="text-2xl font-saira-semibold">
-                    {_card.title}
+                    {_card.project}
                   </h4>
-                  <p className="text-sm my-4">{_card.content}</p>
-                  <button className="w-full bg-app-green text-app-black rounded-[30px] font-saira-medium py-3 mt-auto">
+                  <p className="text-sm my-4">{_card.experience}</p>
+                  <button
+                    className="w-full bg-app-green text-app-black rounded-[30px] font-saira-medium py-3 mt-auto"
+                    onClick={() => navigate(`/my-work/${_card.project}`)}
+                  >
                     View more
                   </button>
                 </div>

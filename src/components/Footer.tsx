@@ -1,4 +1,4 @@
-import { CalendarIcon } from "../assets/Svg";
+import { CalendarIcon, EmailIcon } from "../assets/svg/Svg";
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
 
             <div className="flex flex-wrap gap-6 md:gap-8">
               <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-app-green text-app-black text-sm md:text-xl font-saira-medium rounded-[30px] py-3 sm:py-4 px-8">
-                <CalendarIcon /> <span>Send a message</span>
+                <EmailIcon /> <span>Get in touch</span>
               </button>
               <button className="w-full sm:w-auto flex items-center justify-center gap-3 bg-transparent text-white text-sm md:text-xl font-saira-medium border border-white rounded-[30px] py-3 sm:py-4 px-8">
                 <CalendarIcon /> <span>Schedule a call</span>
