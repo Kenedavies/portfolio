@@ -55,6 +55,20 @@ body {
   scroll-behavior: smooth;
 }
 
+.horizontal-hero-line {
+  animation: heroHorizontalLine 4s cubic-bezier(0.475, 0.885, 0.32, 1.275)
+    infinite;
+}
+
+@keyframes heroHorizontalLine {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 110%;
+  }
+}
+
 // :root {
 //   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 //   line-height: 1.5;
