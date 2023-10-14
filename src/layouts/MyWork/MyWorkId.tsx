@@ -35,8 +35,8 @@ export default function MyWorkId() {
           their cloud infrastructure across multiple providers from a single
           dashboard.
         </p>
-        <div>
-          <h6 className="font-saira-bold">Role</h6>
+        <div className="mb-5">
+          <h6 className="font-saira-bold mb-1">Role</h6>
           <ul>
             <li>User Experience (UX) Designer</li>
             <li>User Interface (UI) Designer</li>
@@ -45,12 +45,12 @@ export default function MyWorkId() {
         </div>
 
         <div>
-          <h6 className="font-saira-bold">Tools</h6>
+          <h6 className="font-saira-bold mb-1">Tools</h6>
           <ul className="">
             {Array.from({ length: 5 }).map((_, index) => (
               <li
                 key={index}
-                className="relative first:static w-10 h-10 inline-block -me-3"
+                className="relative first:static w-10 h-10 inline-block -me-2"
               >
                 <div className="w-10 h-10 bg-white border border-[#BADB4D] rounded-full"></div>
               </li>
