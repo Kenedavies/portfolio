@@ -1,14 +1,25 @@
 import DavidIcon from "./../assets/images/David.svg";
-import { MenuIcon } from "../assets/svg/Svg";
+import { CloseIconOutline, MenuIcon } from "../assets/svg/Svg";
 import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Navbar() {
-  function DrawerMobileNav(x: string) {
-    // document.getSelection("mobileDrawer").style.width = x;
-    console.log("--x", x);
+  const mobileRef = React.useRef<HTMLDivElement>(null!);
+  function DrawerMobileNav() {
+    if (mobileRef.current.style.width === "100%") {
+      mobileRef.current.style.width = "0";
+    } else {
+      mobileRef.current.style.width = "100%";
+    }
   }
+
+  // React.useEffect(() => {
+  //   if (!mobileRef.current) throw Error("divRef is not assigned");
+  //   console.log(mobileRef.current.innerHTML);
+  // }, []);
+
   return (
-    <nav className="absolute top-0 left-0 right-0 bg-transparent px-3 md:px-6 py-4">
+    <nav className="absolute top-0 left-0 right-0 bg-transparent text-white px-3 md:px-6 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-1 md:gap-2">
           <div className="relative">
@@ -31,14 +42,28 @@ export default function Navbar() {
           <Link to="">Read CV</Link>
         </div>
         <button
-          onClick={function () {
-            DrawerMobileNav("100%");
-          }}
+          onClick={DrawerMobileNav}
           className="md:hidden block text-white bg-greeen-400"
         >
           <MenuIcon />
         </button>
-        <div id="mobileDrawer" className="hidden"></div>
+
+        <div
+          ref={mobileRef}
+          className="fixed top-0 left-0 w-0 max-w-[355px] bg-app-black overflow-hidden z-10 duration-500"
+        >
+          <div className="flex flex-col  gap-6 px-4 py-6">
+            <Link to="/">Home</Link>
+            <Link to="my-work">WORK</Link>
+            <Link to="">Contact</Link>
+            <Link to="">Read CV</Link>
+          </div>
+          <div className="absolute top-5 right-4">
+            <button onClick={DrawerMobileNav}>
+              <CloseIconOutline />
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );

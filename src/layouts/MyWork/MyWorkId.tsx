@@ -20,7 +20,7 @@ export default function MyWorkId() {
 
   console.log("--data", data);
   return (
-    <section className="pt-40 text-white">
+    <section className="px-3 md:px-6 pt-40 text-white">
       <div className="container mx-auto">
         <h5 className="text-white mb-6">
           <span className="text-[50px] font-saira-bold"> {myworkId}</span>{" "}
@@ -46,8 +46,15 @@ export default function MyWorkId() {
 
         <div>
           <h6 className="font-saira-bold">Tools</h6>
-          <ul>
-            <li></li>
+          <ul className="">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <li
+                key={index}
+                className="relative first:static w-10 h-10 inline-block -me-3"
+              >
+                <div className="w-10 h-10 bg-white border border-[#BADB4D] rounded-full"></div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
