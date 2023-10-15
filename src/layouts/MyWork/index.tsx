@@ -46,7 +46,7 @@ export default function MyWork() {
               <article key={index} className="flex flex-col rounded-lg">
                 <div className="w-full bg-white flex justify-center rounded-t-lg py-3">
                   <img
-                    src="/src/assets/images/iPhone-11-Pro.svg"
+                    src="../src/assets/images/iPhone-11-Pro.svg"
                     alt="Iphone"
                   />
                 </div>

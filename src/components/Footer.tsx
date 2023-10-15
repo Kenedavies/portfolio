@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="text-center sm:text-left">
             <div className="relative w-fit h-fit mx-auto sm:mx-0">
               <img
-                src="/src/assets/images/David.svg"
+                src="../src/assets/images/David.svg"
                 alt="David"
                 width={221}
                 height={221}

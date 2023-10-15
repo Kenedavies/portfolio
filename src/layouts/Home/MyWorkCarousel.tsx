@@ -8,7 +8,7 @@ export default function MyWorkCarousel() {
       subTitle: "cloud as a service",
       content:
         "Cloudsania is a cloud deployment service that allows business consult and set up cloud infrastructural service.",
-      image: "/src/assets/images/iPad-Pro-Right-View.svg",
+      image: "../src/assets/images/iPad-Pro-Right-View.svg",
       tools: [
         "WEB",
         "DASHBOARD",
@@ -24,7 +24,7 @@ export default function MyWorkCarousel() {
       subTitle: "Ride hailing app ",
       content:
         "I have 20 years of experience and design high-quality digital products that your clients will love and let your business thrive",
-      image: "/src/assets/images/iPhone-12.svg",
+      image: "../src/assets/images/iPhone-12.svg",
       tools: [
         "WEB",
         "DASHBOARD",
@@ -39,7 +39,7 @@ export default function MyWorkCarousel() {
       title: "Wordshop",
       subTitle: "",
       content: "",
-      image: "/src/assets/images/iPhone-11-Pro.svg",
+      image: "../src/assets/images/iPhone-11-Pro.svg",
       tools: [
         "WEB",
         "DASHBOARD",
@@ -54,7 +54,7 @@ export default function MyWorkCarousel() {
       title: "Syncteams",
       subTitle: "",
       content: "",
-      image: "/src/assets/images/iPhone-11-Pro.svg",
+      image: "../src/assets/images/iPhone-11-Pro.svg",
       tools: [
         "WEB",
         "DASHBOARD",
@@ -121,7 +121,7 @@ export default function MyWorkCarousel() {
         </div>
       </section> */}
 
-      <Carousel>
+      <Carousel autoPlay>
         {projectLists.map((project, i) => (
           <section
             key={i}
@@ -146,7 +146,7 @@ export default function MyWorkCarousel() {
                   </span>
                 ))}
               </div>
-              <button className="bg-app-green text-sm md:text-xl font-saira-medium rounded-[30px] py-3 md:py-4 px-12 md:px-20 mt-9">
+              <button className="bg-app-green text-app-black text-sm md:text-xl font-saira-medium rounded-[30px] py-3 md:py-4 px-12 md:px-20 mt-9">
                 View more
               </button>
             </div>

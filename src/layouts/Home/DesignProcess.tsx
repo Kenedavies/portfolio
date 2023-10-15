@@ -10,7 +10,7 @@ const designLists = [
         the market and existing products..
       </>
     ),
-    url: "/src/assets/images/research-illustration.svg",
+    url: "../src/assets/images/research-illustration.svg",
   },
   {
     title: "Wireframes & prototypes",
@@ -24,7 +24,7 @@ const designLists = [
         the users’ experiences.
       </>
     ),
-    url: "/src/assets/images/saas-wireframe-illustration.svg",
+    url: "../src/assets/images/saas-wireframe-illustration.svg",
   },
   {
     title: "Analyze",
@@ -38,25 +38,25 @@ const designLists = [
         solutions to the problem statement.
       </>
     ),
-    url: "/src/assets/images/data-analysis-illustration.svg",
+    url: "../src/assets/images/data-analysis-illustration.svg",
   },
   {
     title: "User testing",
     content:
       "At the testing stage of the design thinking process is to test hypothesis and validation, validade the key reasoning that underlines the design. This is the moment to double check that you have formulated the right problem, and that your solution actually contributes to the user.",
-    url: "/src/assets/images/cuate-illustration.svg",
+    url: "../src/assets/images/cuate-illustration.svg",
   },
   {
     title: "User personas & user flows",
     content:
       "Armed with meaningful insights from the research and analysis phase, I then get to work on crafting user personas. To humanize different target user groups to build empathy with the user and to prioritize key features and design decisions based on real user data.",
-    url: "/src/assets/images/user-info-animation-concept-illustration.svg",
+    url: "../src/assets/images/user-info-animation-concept-illustration.svg",
   },
   {
     title: "Design",
     content:
       "This is visually appealing interface that represent a collation of all the process that addresses and users needs and pain points designing each screen or page with which a user interacts and ensuring that the UI visually communicates the path that a UX designer has laid out.",
-    url: "/src/assets/images/mobile-app-illustration.svg",
+    url: "../src/assets/images/mobile-app-illustration.svg",
   },
 ];
 
