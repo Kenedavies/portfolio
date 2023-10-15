@@ -1,9 +1,10 @@
 import DavidIcon from "./../assets/images/David.svg";
 import { CloseIconOutline, MenuIcon } from "../assets/svg/Svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import React from "react";
 
 export default function Navbar() {
+  const location = useLocation().pathname;
   const mobileRef = React.useRef<HTMLDivElement>(null!);
   function DrawerMobileNav() {
     if (mobileRef.current.style.width === "100%") {
@@ -36,10 +37,34 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden md:flex flex-col md:flex-row gap-6 md:gap-16">
-          <Link to="/">Home</Link>
-          <Link to="my-work">WORK</Link>
-          <Link to="">Contact</Link>
-          <Link to="">Read CV</Link>
+          <Link
+            to="/"
+            className={`${location === "/" ? "text-app-green" : "text-white"}`}
+          >
+            Home
+          </Link>
+          <Link
+            to="my-work"
+            className={`${
+              location === "/my-work" || location === "/my-work/:myworkId"
+                ? "text-app-green"
+                : "text-white"
+            }`}
+          >
+            WORK
+          </Link>
+          <Link
+            to=""
+            className={`${location === "" ? "text-app-green" : "text-white"}`}
+          >
+            Contact
+          </Link>
+          <Link
+            to=""
+            className={`${location === "" ? "text-app-green" : "text-white"}`}
+          >
+            Read CV
+          </Link>
         </div>
         <button
           onClick={DrawerMobileNav}
@@ -53,10 +78,36 @@ export default function Navbar() {
           className="fixed top-0 left-0 w-0 max-w-[355px] bg-app-black overflow-hidden z-10 duration-500"
         >
           <div className="flex flex-col  gap-6 px-4 py-6">
-            <Link to="/">Home</Link>
-            <Link to="my-work">WORK</Link>
-            <Link to="">Contact</Link>
-            <Link to="">Read CV</Link>
+            <Link
+              to="/"
+              className={`${
+                location === "/" ? "text-app-green" : "text-white"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="my-work"
+              className={`${
+                location === "/my-work" || location === "/my-work/:myworkId"
+                  ? "text-app-green"
+                  : "text-white"
+              }`}
+            >
+              WORK
+            </Link>
+            <Link
+              to=""
+              className={`${location === "" ? "text-app-green" : "text-white"}`}
+            >
+              Contact
+            </Link>
+            <Link
+              to=""
+              className={`${location === "" ? "text-app-green" : "text-white"}`}
+            >
+              Read CV
+            </Link>
           </div>
           <div className="absolute top-5 right-4">
             <button onClick={DrawerMobileNav}>
