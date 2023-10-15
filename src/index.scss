@@ -56,16 +56,16 @@ body {
 }
 
 .horizontal-hero-line {
-  animation: heroHorizontalLine 4s cubic-bezier(0.475, 0.885, 0.32, 1.275)
+  animation: heroHorizontalLine 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775)
     infinite;
 }
 
 @keyframes heroHorizontalLine {
   from {
-    left: -10%;
+    left: 0;
   }
   to {
-    left: 110%;
+    left: 100%;
   }
 }
 
