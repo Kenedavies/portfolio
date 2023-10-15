@@ -1,5 +1,11 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import CloudsaniaImg from "../../assets/images/iPad-Pro-Right-View.svg";
+import TreepzImg from "../../assets/images/iPhone-12.svg";
+import WordshopImg from "../../assets/images/iPhone-11-Pro.svg";
+import SyncteamsImg from "../../assets/images/iPhone-11-Pro.svg";
+import Iphone14ProImg from "../../assets/images/iPhone-14-Pro-Space-Black-Front.svg";
+import IphoneXImg from "../../assets/images/iPhone-X-Side-View.svg";
 
 export default function MyWorkCarousel() {
   const projectLists = [
@@ -8,7 +14,7 @@ export default function MyWorkCarousel() {
       subTitle: "cloud as a service",
       content:
         "Cloudsania is a cloud deployment service that allows business consult and set up cloud infrastructural service.",
-      image: "../src/assets/images/iPad-Pro-Right-View.svg",
+      image: CloudsaniaImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -24,7 +30,7 @@ export default function MyWorkCarousel() {
       subTitle: "Ride hailing app ",
       content:
         "I have 20 years of experience and design high-quality digital products that your clients will love and let your business thrive",
-      image: "../src/assets/images/iPhone-12.svg",
+      image: TreepzImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -39,7 +45,7 @@ export default function MyWorkCarousel() {
       title: "Wordshop",
       subTitle: "",
       content: "",
-      image: "../src/assets/images/iPhone-11-Pro.svg",
+      image: WordshopImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -54,7 +60,7 @@ export default function MyWorkCarousel() {
       title: "Syncteams",
       subTitle: "",
       content: "",
-      image: "../src/assets/images/iPhone-11-Pro.svg",
+      image: SyncteamsImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -160,19 +166,14 @@ export default function MyWorkCarousel() {
                   <img src={project.image} alt={project.title} />
                   {i === 1 && (
                     <img
-                      src="/src/assets/images/iPhone-14-Pro-Space-Black-Front.svg"
+                      src={Iphone14ProImg}
                       alt=""
                       width="147"
                       height="451"
                       className="max-w-[177px]"
                     />
                   )}
-                  {i > 1 && (
-                    <img
-                      src="/src/assets/images/iPhone-X-Side-View.svg"
-                      alt=""
-                    />
-                  )}
+                  {i > 1 && <img src={IphoneXImg} alt="" />}
                 </div>
               </div>
             </div>

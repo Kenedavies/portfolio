@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { myWorkData } from "../../util/myWorkData";
+import Iphone11ProImg from "../../assets/images/iPhone-11-Pro.svg";
 
 export default function MyWork() {
   const navigate = useNavigate();
@@ -45,10 +46,7 @@ export default function MyWork() {
             {myWorkData.map((_card, index) => (
               <article key={index} className="flex flex-col rounded-lg">
                 <div className="w-full bg-white flex justify-center rounded-t-lg py-3">
-                  <img
-                    src="../src/assets/images/iPhone-11-Pro.svg"
-                    alt="Iphone"
-                  />
+                  <img src={Iphone11ProImg} alt="Iphone" />
                 </div>
                 <div
                   className="h-full flex flex-col rounded-lg rounded-b-lg px-4 md:px-5 py-8"
