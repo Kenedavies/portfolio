@@ -75,8 +75,8 @@ export default function DesignProcess() {
             key={index}
             className="bg-[#161616] pl-5 md:pl-6 pt-7 pb-3 pr-3 md:pr-4"
           >
-            <div className="flex itens-center md: gap-3 md:gap-5">
-              <div className="w-[123px] h-[142px] relative bg-app-green">
+            <div className="flex flex-col sm:flex-row itens-center md: gap-3 md:gap-5 text-center sm:text-left">
+              <div className="w-[123px] h-[142px] relative bg-app-green mx-auto sm:mx-0">
                 <div className="w-full h-full absolute top-[-8px] left-[-8px] bg-[#EB5757] grid place-content-center">
                   <img src={design.url} alt={design.title} />
                 </div>

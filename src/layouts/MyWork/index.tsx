@@ -71,6 +71,56 @@ export default function MyWork() {
               </article>
             ))}
           </section>
+
+          <section>
+            <div className="flex gap-y-5">
+              <div className="w-full md:w-2/5 grid grid-cols-2">
+                <div>
+                  <h4 className="text-[rgba(255,255,255,0.50)] text-lg md:text-2xl font-saira-bold mb-1">
+                    SKILLS
+                  </h4>
+                  <ul>
+                    {[
+                      "Service design",
+                      "Interface design",
+                      "Design thinking",
+                      "User research",
+                      "User testing",
+                      "Wireframing",
+                      "Prototyping",
+                      "Design systems",
+                      "Interface design",
+                    ].map((skill, index) => (
+                      <li key={index}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-[rgba(255,255,255,0.50)] text-lg md:text-2xl font-saira-bold mb-1">
+                    TOOLS
+                  </h4>
+                  <ul>
+                    {[
+                      "Sketch",
+                      "Figma",
+                      "Adobe XD",
+                      "Webflow",
+                      "Framer",
+                      "Interface design",
+                      "Spline",
+                      "Rotato",
+                      "Maze (User testing)",
+                    ].map((tool, index) => (
+                      <li key={index}>{tool}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full md:w-3/5">
+                <div className="min-h-[200px] h-full bg-[#D9D9D9]"></div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>
