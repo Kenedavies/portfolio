@@ -69,6 +69,31 @@ body {
   }
 }
 
+.carousel-root {
+  .carousel.carousel-slider {
+    overflow: visible;
+    .control-dots {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      text-align: right;
+      .dot {
+        width: 19px;
+        height: 8px;
+        border-radius: 10px;
+        background: rgba(186, 219, 77, 0.1);
+        margin: 0 2px;
+      }
+      .selected {
+        width: 112px;
+        // height: 8px;
+        border-radius: 10px;
+        background: #badb4d;
+      }
+    }
+  }
+}
+
 // :root {
 //   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 //   line-height: 1.5;

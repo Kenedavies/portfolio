@@ -73,15 +73,15 @@ export default function MyWorkCarousel() {
         <h4 className="text-lg md:text-2xl text-white font-saira-bold">
           My works
         </h4>
-        <div className="flex items-center gap-1">
+        {/* <div className="flex items-center gap-1">
           <button className="w-[112px] h-2 bg-app-green rounded-[10px]"></button>
           <button className="w-5 h-2 bg-[rgba(186,219,77,0.10)] rounded-[10px]"></button>
           <button className="w-5 h-2 bg-[rgba(186,219,77,0.10)] rounded-[10px]"></button>
           <button className="w-5 h-2 bg-[rgba(186,219,77,0.10)] rounded-[10px]"></button>
-        </div>
+        </div> */}
       </div>
 
-      <section className="flex flex-wrap gap-y-6 bg-white text-app-black rounded-[10px] p-4 md:p-10">
+      {/* <section className="flex flex-wrap gap-y-6 bg-white text-app-black rounded-[10px] p-4 md:p-10">
         <div className="w-full lg:w-1/2">
           <div className="text-4xl md:text-[60px] font-saira-bold leading-[150%] mb-3">
             Cloudsania
@@ -119,7 +119,7 @@ export default function MyWorkCarousel() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Carousel>
         {projectLists.map((project, i) => (
@@ -151,30 +151,28 @@ export default function MyWorkCarousel() {
               </button>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="bg-app-green pe-[10px] rounded-sm">
-                <div className="bg-[#1C1C1C] pe-[10px] rounded">
-                  <div
-                    className={`h-full grid place-items-center ${
-                      i > 0 ? "grid-cols-2" : "grid-cols-1"
-                    } md:gap-14 bg-[#1C1C1C] p-4 md:p-6 rounded ms-[-4px]`}
-                  >
-                    <img src={project.image} alt={project.title} />
-                    {i === 1 && (
-                      <img
-                        src="/src/assets/images/iPhone-14-Pro-Space-Black-Front.svg"
-                        alt=""
-                        width="147"
-                        height="451"
-                        className="max-w-[177px]"
-                      />
-                    )}
-                    {i > 1 && (
-                      <img
-                        src="/src/assets/images/iPhone-X-Side-View.svg"
-                        alt=""
-                      />
-                    )}
-                  </div>
+              <div className="bg-[#1C1C1C] pe-[10px] rounded">
+                <div
+                  className={`h-full grid place-items-center ${
+                    i > 0 ? "grid-cols-2" : "grid-cols-1"
+                  } md:gap-14 bg-[#1C1C1C] p-4 md:p-6 rounded ms-[-4px]`}
+                >
+                  <img src={project.image} alt={project.title} />
+                  {i === 1 && (
+                    <img
+                      src="/src/assets/images/iPhone-14-Pro-Space-Black-Front.svg"
+                      alt=""
+                      width="147"
+                      height="451"
+                      className="max-w-[177px]"
+                    />
+                  )}
+                  {i > 1 && (
+                    <img
+                      src="/src/assets/images/iPhone-X-Side-View.svg"
+                      alt=""
+                    />
+                  )}
                 </div>
               </div>
             </div>
