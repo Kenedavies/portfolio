@@ -1,11 +1,11 @@
 import DavidIcon from "./../assets/images/David.svg";
 import { CloseIconOutline, MenuIcon } from "../assets/svg/Svg";
 import { Link, useLocation } from "react-router-dom";
-import React from "react";
+import { useRef } from "react";
 
 export default function Navbar() {
   const location = useLocation().pathname;
-  const mobileRef = React.useRef<HTMLDivElement>(null!);
+  const mobileRef = useRef<HTMLDivElement>(null!);
   function DrawerMobileNav() {
     if (mobileRef.current.style.width === "100%") {
       mobileRef.current.style.width = "0";
