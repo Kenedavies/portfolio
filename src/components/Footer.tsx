@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex justify-between flex-col lg:flex-row gap-10">
           <div className="lg:w-2/4">
-            <h2 className="text-2xl md:text-[30px] font-saira-bold">
+            <h2 className="text-2xl md:text-[30px] text-center sm:text-left font-saira-bold">
               Thanks for your time
             </h2>
             <div className="flex justify-between md:justify-start items-center md:gap-24 my-4 md:my-6">
@@ -25,8 +25,8 @@ export default function Footer() {
               </button>
             </div>
           </div>
-          <div className="">
-            <div className="relative w-fit h-fit">
+          <div className="text-center sm:text-left">
+            <div className="relative w-fit h-fit mx-auto sm:mx-0">
               <img
                 src="/src/assets/images/David.svg"
                 alt="David"

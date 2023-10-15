@@ -73,9 +73,10 @@ export default function Navbar() {
           <MenuIcon />
         </button>
 
+        {/* start mobile nav */}
         <div
           ref={mobileRef}
-          className="fixed top-0 left-0 w-0 max-w-[355px] bg-app-black overflow-hidden z-10 duration-500"
+          className="fixed top-0 left-0 bottom-0 w-0 max-w-[400px] bg-app-black overflow-hidden z-10 duration-500"
         >
           <div className="flex flex-col  gap-6 px-4 py-6">
             <Link
@@ -115,6 +116,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+        {/* end mobile nav */}
       </div>
     </nav>
   );
