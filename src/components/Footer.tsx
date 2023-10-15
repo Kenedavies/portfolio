@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="px-3 md:px-6 py-16 lg:py-28">
       <div className="container mx-auto">
         <div className="flex justify-between flex-col lg:flex-row gap-10">
-          <div className="w-full lg:w-2/4">
+          <div className="w-full lg:w-3/5">
             <h2 className="text-2xl md:text-[30px] text-center lg:text-left font-saira-bold">
               Thanks for your time
             </h2>
