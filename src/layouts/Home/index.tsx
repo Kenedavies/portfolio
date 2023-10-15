@@ -21,7 +21,8 @@ export default function Home() {
               SaaS Product designer
             </h3>
             <p className="max-w-[700px] md:text-lg md:text-2xl text-app-gray pt-5 lg:pt-8 mb-12">
-              I have 5 years of experience and design high-quality digital
+              I have 5+ years of experience designing Web or SaaS applications
+              in complex or technical spacesand design high-quality digital
               products that your clients will love and let your business thrive.
             </p>
             <div className="flex flex-wrap gap-6 md:gap-8">
@@ -48,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white px-3 md:px-6  py-14 md:py-20">
+      <section className="bg-[#121212] px-3 md:px-6  py-14 md:py-20">
         <div className="container mx-auto">
           <DesignProcess />
         </div>
