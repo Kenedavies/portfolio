@@ -127,7 +127,7 @@ export default function MyWorkCarousel() {
         </div>
       </section> */}
 
-      <Carousel infiniteLoop>
+      <Carousel autoPlay infiniteLoop>
         {projectLists.map((project, i) => (
           <section
             key={i}
