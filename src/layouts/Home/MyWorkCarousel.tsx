@@ -127,13 +127,13 @@ export default function MyWorkCarousel() {
         </div>
       </section> */}
 
-      <Carousel autoPlay infiniteLoop>
+      <Carousel infiniteLoop>
         {projectLists.map((project, i) => (
           <section
             key={i}
             className="flex flex-wrap gap-y-5 bg-[#1C1C1C] text-white rounded-[10px] p-4 md:p-10"
           >
-            <div className="w-full lg:w-1/2 text-left">
+            <div className="w-full lg:w-1/2 text-left lg:pe-8">
               <div className="text-4xl md:text-[60px] font-saira-bold leading-[150%] mb-3">
                 {project.title}
               </div>
