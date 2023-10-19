@@ -60,12 +60,52 @@ body {
     infinite;
 }
 
+.horizontal-hero-line-2 {
+  animation: heroHorizontalLine2 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775)
+    infinite;
+}
+
+.vertical-hero-line {
+  animation: verticalLine 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
+}
+
+.vertical-hero-line-2 {
+  animation: verticalLine2 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
+}
+
 @keyframes heroHorizontalLine {
   from {
     left: 0;
   }
   to {
     left: 100%;
+  }
+}
+
+@keyframes heroHorizontalLine2 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes verticalLine {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes verticalLine2 {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
   }
 }
 
