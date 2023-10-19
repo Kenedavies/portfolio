@@ -6,11 +6,14 @@ import DesignProcess from "./DesignProcess";
 export default function Home() {
   return (
     <main>
-      <section className="bg-[url('/src/assets/images/Hero-lines.png')] bg-no-repeat bg-cover px-3 md:px-6 pt-28 overflow-hidden">
+      <section className="relative bg-[url('/src/assets/images/Hero-lines.png')] bg-no-repeat bg-cover px-3 md:px-6 pt-28 pb-10 md:pb-20 overflow-hidden">
         {/* horizontal animation start */}
-        <div className="relative">
-          <div className="horizontal-hero-line absolute top-10 left-0 bg-app-green w-[64px] h-[1px]"></div>
-        </div>
+
+        <div className="horizontal-hero-line absolute top-40 left-0 bg-app-green w-[64px] h-[1px]"></div>
+        <div className="horizontal-hero-line-2 absolute bottom-10 md:bottom-[88px] right-0 bg-app-green w-[64px] h-[1px]"></div>
+        <div className="vertical-hero-line absolute top-0 left-[20%] bg-app-green w-[1px] h-[64px]"></div>
+        <div className="vertical-hero-line-2 absolute bottom-0 right-[20%] bg-app-green w-[1px] h-[64px]"></div>
+
         {/* horizontal animation end */}
         <div className="container mx-auto py-12 md:py-20">
           <div className="max-w-[750px] mx-auto flex flex-col items-center text-center">
@@ -37,7 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-3 md:px-6">
+      <section className="px-3 md:px-6 py-10">
         <div className="container mx-auto">
           <MyWorkCarousel />
         </div>

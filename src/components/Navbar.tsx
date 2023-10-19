@@ -51,7 +51,7 @@ export default function Navbar() {
                 : "text-white"
             }`}
           >
-            WORK
+            Work
           </Link>
           <Link
             to=""
