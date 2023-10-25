@@ -56,21 +56,21 @@ body {
 }
 
 .horizontal-hero-line {
-  animation: heroHorizontalLine 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775)
+  animation: heroHorizontalLine 4s cubic-bezier(0.275, 0.885, 0.32, 1.775)
     infinite;
 }
 
 .horizontal-hero-line-2 {
-  animation: heroHorizontalLine2 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775)
+  animation: heroHorizontalLine2 4s cubic-bezier(0.275, 0.885, 0.32, 1.775)
     infinite;
 }
 
 .vertical-hero-line {
-  animation: verticalLine 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
+  animation: verticalLine 4s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
 }
 
 .vertical-hero-line-2 {
-  animation: verticalLine2 3.7s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
+  animation: verticalLine2 4s cubic-bezier(0.275, 0.885, 0.32, 1.775) infinite;
 }
 
 @keyframes heroHorizontalLine {
