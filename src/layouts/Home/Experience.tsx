@@ -1,24 +1,24 @@
 const experienceList = [
   {
-    company: "Syncteams",
-    title: "Product Designer, Nitro",
-    time: "07/'23 - Present",
+    company: "Revva",
+    title: "Product Designer",
+    time: "Feb 23 - Present",
     content:
-      "I championed the redesign of the bank's internal corporate cards portal, and designed a patented wealth management network visualizer.",
+      "The goal of this project was to create a platform that would allow creators to share exclusive content with their fans and earn money from their subscriptions.",
   },
   {
     company: "Iqube Labs",
-    title: "Product Designer, Nitro",
-    time: "07/'23 - Present",
+    title: "Product Designer",
+    time: "June 2021 - Jan 2023",
     content:
-      "I championed the redesign of the bank's internal corporate cards portal, and designed a patented wealth management network visualizer.",
+      "Researched, designed and documented several projects for a variety of clients. wireframes, prototypes, and mockups to test and iterate on the design.",
   },
   {
-    company: "Myrevva",
-    title: "Product Designer, Nitro",
-    time: "07/'23 - Present",
+    company: "Syncteams",
+    title: "Product Designer",
+    time: "Feb 2018 - May 2021",
     content:
-      "I championed the redesign of the bank's internal corporate cards portal, and designed a patented wealth management network visualizer.",
+      "I was responsible for the conception, design, and conducting extensive user research to understand the needs of businesses and the challenges they faced when collaborating on projects. I also analyzed existing collaboration tools to identify their strengths and weaknesses.",
   },
 ];
 
