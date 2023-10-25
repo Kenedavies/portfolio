@@ -6,6 +6,7 @@ import WordshopImg from "../../assets/images/iPhone-11-Pro.svg";
 import SyncteamsImg from "../../assets/images/Syncteams-work.png";
 import Iphone14ProImg from "../../assets/images/iPhone-14-Pro-Space-Black-Front.svg";
 import IphoneXImg from "../../assets/images/iPhone-X-Side-View.svg";
+import { LinkArrow } from "../../assets/svg/Svg";
 
 export default function MyWorkCarousel() {
   const projectLists = [
@@ -152,8 +153,9 @@ export default function MyWorkCarousel() {
                   </span>
                 ))}
               </div>
-              <button className="bg-app-green text-app-black text-sm md:text-xl font-saira-medium rounded-[30px] py-3 md:py-4 px-12 md:px-20 mt-9">
-                View more
+              <button className="bg-app-green text-app-black text-sm md:text-xl font-saira-medium rounded-[30px] py-3 md:py-4 px-6 md:px-8 mt-9">
+                <span className="me-1 md:me-2">Read case study</span>
+                <LinkArrow />
               </button>
             </div>
             <div className="w-full lg:w-1/2">

@@ -73,3 +73,24 @@ export const EmailIcon = ({ color = "black" }) => {
     </svg>
   );
 };
+
+export const LinkArrow = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="25"
+      className="w-4 md:w-6 inline"
+      viewBox="0 0 24 25"
+      fill="none"
+    >
+      <path
+        d="M4.5 20L19.5 5M19.5 5H8.25M19.5 5V16.25"
+        stroke="#010101"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
