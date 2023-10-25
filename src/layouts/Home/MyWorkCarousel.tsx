@@ -3,34 +3,18 @@ import { Carousel } from "react-responsive-carousel";
 import CloudsaniaImg from "../../assets/images/iPad-Pro-Right-View.svg";
 import TreepzImg from "../../assets/images/iPhone-12.svg";
 import WordshopImg from "../../assets/images/iPhone-11-Pro.svg";
-import SyncteamsImg from "../../assets/images/iPhone-11-Pro.svg";
+import SyncteamsImg from "../../assets/images/Syncteams-work.png";
 import Iphone14ProImg from "../../assets/images/iPhone-14-Pro-Space-Black-Front.svg";
 import IphoneXImg from "../../assets/images/iPhone-X-Side-View.svg";
 
 export default function MyWorkCarousel() {
   const projectLists = [
     {
-      title: "Cloudsania",
-      subTitle: "cloud as a service",
+      title: "Syncteams",
+      subTitle: "Software as a service",
       content:
-        "Cloudsania is a cloud deployment service that allows business consult and set up cloud infrastructural service.",
-      image: CloudsaniaImg,
-      tools: [
-        "WEB",
-        "DASHBOARD",
-        "SAAS",
-        "B2C",
-        "TRANSPORTATION",
-        "DESIGN SYSTEM",
-        "USER RESEARCH",
-      ],
-    },
-    {
-      title: "Treepz",
-      subTitle: "Ride hailing app ",
-      content:
-        "I have 20 years of experience and design high-quality digital products that your clients will love and let your business thrive",
-      image: TreepzImg,
+        "Syncteams is a smart collaboration tool that helps business communicate, track, and measure tasks across cross-functional teams that need actionable metrics in one place.",
+      image: SyncteamsImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -43,7 +27,7 @@ export default function MyWorkCarousel() {
     },
     {
       title: "Wordshop",
-      subTitle: "",
+      subTitle: "Self publishing service",
       content: "",
       image: WordshopImg,
       tools: [
@@ -57,10 +41,27 @@ export default function MyWorkCarousel() {
       ],
     },
     {
-      title: "Syncteams",
-      subTitle: "",
-      content: "",
-      image: SyncteamsImg,
+      title: "Treepz",
+      subTitle: "Ride booking service",
+      content:
+        "Treepz helps its users book and rent cars from a variety of rental companies and individuals around Africa.",
+      image: TreepzImg,
+      tools: [
+        "WEB",
+        "DASHBOARD",
+        "SAAS",
+        "B2C",
+        "TRANSPORTATION",
+        "DESIGN SYSTEM",
+        "USER RESEARCH",
+      ],
+    },
+    {
+      title: "Cloudsania",
+      subTitle: "Cloud as a service",
+      content:
+        "Cloudsania is a cloud deployment service that allows business consult and set up cloud infrastructural service.",
+      image: CloudsaniaImg,
       tools: [
         "WEB",
         "DASHBOARD",
@@ -77,7 +78,7 @@ export default function MyWorkCarousel() {
     <div>
       <div className="flex justify-between items-center flex-wrap gap-10 mb-6">
         <h4 className="text-lg md:text-2xl text-white font-saira-bold">
-          My works
+          Projects
         </h4>
         {/* <div className="flex items-center gap-1">
           <button className="w-[112px] h-2 bg-app-green rounded-[10px]"></button>
@@ -127,7 +128,7 @@ export default function MyWorkCarousel() {
         </div>
       </section> */}
 
-      <Carousel autoPlay infiniteLoop>
+      <Carousel autoPlay showArrows={false} infiniteLoop>
         {projectLists.map((project, i) => (
           <section
             key={i}
@@ -137,10 +138,9 @@ export default function MyWorkCarousel() {
               <div className="text-4xl md:text-[60px] font-saira-bold leading-[150%] mb-3">
                 {project.title}
               </div>
-              <p className="text-md md:text-xl">cloud as a service</p>
+              <p className="text-md md:text-xl">{project.subTitle}</p>
               <p className="max-w-[438px] text-sm md:text-lg mt-4 mb-16 md:mb-24">
-                Cloudsania is a cloud deployment service that allows business
-                consult and set up cloud infrastructural service.
+                {project.content}
               </p>
               <div className="flex flex-wrap gap-[10px]">
                 {project.tools.map((tool, index) => (
@@ -160,7 +160,7 @@ export default function MyWorkCarousel() {
               <div className="bg-[#1C1C1C] pe-[10px] rounded">
                 <div
                   className={`h-full grid place-items-center ${
-                    i > 0 ? "grid-cols-2" : "grid-cols-1"
+                    i === 1 || i === 2 ? "grid-cols-2" : "grid-cols-1"
                   } md:gap-14 bg-[#1C1C1C] p-4 md:p-6 rounded ms-[-4px]`}
                 >
                   <img src={project.image} alt={project.title} />
@@ -173,7 +173,7 @@ export default function MyWorkCarousel() {
                       className="max-w-[177px]"
                     />
                   )}
-                  {i > 1 && <img src={IphoneXImg} alt="" />}
+                  {i === 2 && <img src={IphoneXImg} alt="" />}
                 </div>
               </div>
             </div>

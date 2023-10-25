@@ -114,7 +114,7 @@ body {
     overflow: visible;
     .control-dots {
       position: absolute;
-      top: -50px;
+      top: -60px;
       right: 0;
       text-align: right;
       .dot {
@@ -130,6 +130,10 @@ body {
         border-radius: 10px;
         background: #badb4d;
       }
+    }
+    .carousel-status {
+      top: -49px;
+      right: 190px;
     }
   }
 }
