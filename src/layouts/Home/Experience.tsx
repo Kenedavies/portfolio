@@ -24,7 +24,7 @@ const experienceList = [
 
 export default function Experience() {
   return (
-    <div className="py-12 md:py-24">
+    <div className="py-10 md:py-24">
       <p className="text-lg md:text-2xl text-white font-saira-bold">
         Experience
       </p>
